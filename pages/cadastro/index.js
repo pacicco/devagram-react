@@ -1,14 +1,13 @@
 import { useState } from "react";
-import logo from "../../public/images/logo.svg"
 import Image from "next/image";
 import Link from "next/link";
 import Botao from "../../componentes/botao";
 import InputPublico from "../../componentes/inputPublico";
-import uploadImagem from "../../componentes/uploadImagem"
-
-import usuario from "../../public/images/usuario.svg"
-import imagemEnvelope from "../../public/images/imagemEnvelope.svg"
-import chave from "../../public/images/chave.svg"
+import UploadImagem from "../../componentes/uploadImagem";
+import logotipo from "../../public/images/logotipo.svg";
+import usuario from "../../public/images/usuario.svg";
+import imagemEnvelope from "../../public/images/imagemEnvelope.svg";
+import chave from "../../public/images/chave.svg";
 import avatar from "../../public/images/avatar.svg"
 
 
@@ -26,7 +25,7 @@ export default function Cadastro() {
         <section className={`paginaCadastro paginaPublica`}>
             <div className="logoContainer desktop">
                 <Image
-                    src={logo}
+                    src={logotipo}
                     alt="logotipo"
                     layout="fill"
                     className="logo"
@@ -35,11 +34,13 @@ export default function Cadastro() {
 
             <div className="conteudoPaginaPublica">
                 <form>
-                    <uploadImagem
+                    {<UploadImagem
                         imagemPreviewClassName="avatar avatarPreview"
                         imagemPreview={imagem?.preview || avatar.src}
                         setImagem={setImagem}
-                    />
+                    />}
+                    
+                    
                     <InputPublico
                         imagem={usuario}
                         texto="Nome Completo"

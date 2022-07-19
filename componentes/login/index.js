@@ -5,7 +5,7 @@ import InputPublico from "../inputPublico";
 import Botao from "../botao";
 import imagemEnvelope from "../../public/images/imagemEnvelope.svg";
 import chave from "../../public/images/chave.svg";
-import logo from "../../public/images/logo.svg"
+import logotipo from "../../public/images/logotipo.svg"
 
 
 export default function Login() {
@@ -17,7 +17,7 @@ export default function Login() {
         <section className={`paginaLogin paginaPublica`}>
             <div className="logoContainer">
                 <Image
-                    src={logo}
+                    src={logotipo}
                     alt="logotipo"
                     layout="fill"
                     className="logo"
@@ -45,7 +45,7 @@ export default function Login() {
                     <Botao
                         texto="login"
                         tipo="submit"
-                        desabiltado={false}
+                        desabilitado={false}
 
                     />
                 </form>

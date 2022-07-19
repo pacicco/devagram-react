@@ -4,11 +4,11 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 0 32px;
+    padding: 40px 32px;
 
     .logoContainer {
         position: relative;
-        height: 13%;
+        height: 80px;
         width: 100%;
         margin-bottom: 50px;
     }
@@ -43,7 +43,7 @@
         flex-direction: row;
         padding: 0 140px;
         font-size: 18px;
-
+        
         .logoContainer {
             height: 30%;
             flex: 2;
