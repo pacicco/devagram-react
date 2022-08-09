@@ -4,7 +4,7 @@ import Link from "next/link";
 import Botao from "../../componentes/botao";
 import InputPublico from "../../componentes/inputPublico";
 import UploadImagem from "../../componentes/uploadImagem";
-import { validarEmail, validarSenha, validarNome, validarConfirmacaoSenha } from '../../utils';
+import { validarEmail, validarSenha, validarNome, validarConfirmacaoSenha } from '../../utils/validadores';
 import UsuarioService from '../../services/UsuarioService';
 
 
